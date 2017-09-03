@@ -29,7 +29,7 @@ namespace taskManager2
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
             listBox.Items.Clear();
-            foreach(Process p in Process.GetProcesses())
+            foreach (Process p in Process.GetProcesses())
             {
                 listBox.Items.Add(p.ProcessName);
             }
