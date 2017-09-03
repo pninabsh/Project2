@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace taskManager2
 {
@@ -23,6 +24,11 @@ namespace taskManager2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:taskManager2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Task Manager" Height="570.725" Width="479.291">
+    <Grid RenderTransformOrigin="0.971,0.957" Margin="0,0,32.8,9.4">
+        <Button x:Name="button" Content="End Task" HorizontalAlignment="Left" Height="48" Margin="255,454,0,0" VerticalAlignment="Top" Width="87"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="406" Margin="32,28,0,0" VerticalAlignment="Top" Width="349" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.056"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Button x:Name="button_Copy" Content="refresh" HorizontalAlignment="Left" Height="48" Margin="103,454,0,0" VerticalAlignment="Top" Width="87" Click="button_Copy_Click"/>
     </Grid>
 </Window>
