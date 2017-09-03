@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Task Manager" Height="570.725" Width="479.291">
     <Grid RenderTransformOrigin="0.971,0.957" Margin="0,0,32.8,9.4">
-        <Button x:Name="button" Content="End Task" HorizontalAlignment="Left" Height="48" Margin="255,454,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button x:Name="button" Content="End Task" HorizontalAlignment="Left" Height="48" Margin="174,454,0,0" VerticalAlignment="Top" Width="87"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="406" Margin="32,28,0,0" VerticalAlignment="Top" Width="349" RenderTransformOrigin="0.5,0.5">
             <ListBox.RenderTransform>
                 <TransformGroup>
@@ -18,6 +18,7 @@
                 </TransformGroup>
             </ListBox.RenderTransform>
         </ListBox>
-        <Button x:Name="button_Copy" Content="refresh" HorizontalAlignment="Left" Height="48" Margin="103,454,0,0" VerticalAlignment="Top" Width="87" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy" Content="Update" HorizontalAlignment="Left" Height="48" Margin="44,454,0,0" VerticalAlignment="Top" Width="87" Click="button_Copy_Click" RenderTransformOrigin="0.791,0.472"/>
+        <Button x:Name="button_Copy1" Content="Exit" HorizontalAlignment="Left" Height="48" Margin="294,454,0,0" VerticalAlignment="Top" Width="87" Click="button_Copy1_Click"/>
     </Grid>
 </Window>

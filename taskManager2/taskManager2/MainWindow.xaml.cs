@@ -28,7 +28,16 @@ namespace taskManager2
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
+            listBox.Items.Clear();
+            foreach(Process p in Process.GetProcesses())
+            {
+                listBox.Items.Add(p.ProcessName);
+            }
+        }
 
+        private void button_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(1);
         }
     }
 }
